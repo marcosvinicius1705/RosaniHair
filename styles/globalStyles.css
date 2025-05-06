@@ -16,9 +16,10 @@
 
 body {
     background-image: url(img/tesouras.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: cover;           /* Cobre a tela sem distorcer */
+    background-position: center;      /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    background-attachment: fixed;     /* Funciona bem em navegadores que suportam */
     background-color: rgba(17, 16, 16, 0.795);
     background-blend-mode: multiply;
     color: #fff;
@@ -27,10 +28,10 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Corrige para iOS/Safari */
+/* Corrigir o Safari no iOS (remove o 'fixed', que causa zoom ou quebra) */
 @supports (-webkit-touch-callout: none) {
   body {
-    background-attachment: scroll;
+    background-attachment: scroll; /* Corrige o zoom indesejado */
   }
 }
 
