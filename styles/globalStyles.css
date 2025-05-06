@@ -15,17 +15,22 @@
 }
 
 body {
-    background-image: url(img/tesouras.jpg); 
-    -o-object-fit: cover; 
-    object-fit: cover;
-    background-size: cover; /* Cobre toda a área do corpo */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
-    background-color: rgba(17, 16, 16, 0.795); /* Cor de fundo com opacidade */
-    background-blend-mode: multiply; 
-    color: #fff; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    box-sizing: border-box; 
-    scroll-behavior: smooth; 
+    background-image: url(img/tesouras.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(17, 16, 16, 0.795);
+    background-blend-mode: multiply;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Corrige para iOS/Safari */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
