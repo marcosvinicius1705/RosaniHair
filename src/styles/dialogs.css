@@ -1,0 +1,49 @@
+.modal {
+    display: none; /* O modal está oculto por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1; /* Coloca o modal acima de outros elementos */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Permite rolagem se o conteúdo for maior que a tela */
+    background-color: #000; /* Cor de fundo preta */
+    background-color: rgba(0, 0, 0, 0.753); /* Cor de fundo com opacidade */
+}
+
+.modal-content {
+    background-color: #414141ec; /* Cor de fundo do conteúdo do modal */
+    color: #fff; /* Cor do texto */
+    margin: 8% auto; /* Margem superior de 8% e centraliza horizontalmente */
+    padding: 20px; /* Preenchimento interno */
+    border: 1px solid #888; /* Borda do modal */
+    width: 50%; /* Largura do conteúdo do modal */
+}
+
+.modal-content ul {
+    color: #7B695D; /* Cor dos itens da lista */
+}
+
+.modal-content li {
+    color: #fff; /* Cor dos itens da lista */
+}
+
+.close {
+    color: #aaa; /* Cor do botão de fechar */
+    float: right; /* Alinha o botão à direita */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: 700; /* Peso da fonte */
+    margin-left: 97%; /* Margem à esquerda para afastar do lado */
+}
+
+.close:hover, .close:focus {
+    color: #faebd7; /* Cor do botão de fechar ao passar o mouse ou focar */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+@media (max-width: 690px) {
+    .modal-content {
+        width: 80%; /* Largura do conteúdo do modal em telas menores */
+    }
+}

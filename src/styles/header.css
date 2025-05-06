@@ -1,0 +1,75 @@
+html, body {
+    scroll-behavior: smooth; 
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    box-shadow: 0 8px 10px #000; 
+    color: #fff; 
+    background-color: rgba(112, 114, 116, 0.199); 
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+nav ul {
+    display: flex; 
+    list-style: none;
+    gap: 16px; 
+    transition: 2s ease; 
+    margin-top: 20px; 
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none; 
+    color: #fff;
+}
+
+a:hover {
+    color: #7B695D; 
+}
+
+header .logo {
+    width: clamp(3rem, 5vw, 5rem);
+    object-fit: cover; 
+    display: flex; 
+    align-items: center; 
+}
+
+button{
+    border: 0;
+    background: transparent;
+    display: none; 
+}
+
+button img{
+    width: 35px;
+}
+
+@media (max-width: 590px) {
+    nav {
+        flex-wrap: wrap; 
+        width: 100%; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+        margin-top: -150%; 
+        pointer-events: none; 
+        padding-left: 3%;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .menu {
+        margin-top: 20px; 
+        pointer-events: all; 
+    }
+
+}
