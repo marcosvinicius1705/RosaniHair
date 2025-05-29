@@ -1,4 +1,5 @@
-Rosani Hair
+
+🌸 Rosani Hair
 Site oficial do Studio de Beleza Rosani Hair, desenvolvido com o objetivo de apresentar o espaço, seus profissionais, serviços, cursos e formas de contato de maneira moderna, funcional e acolhedora.
 
 ✨ Sobre o Projeto
